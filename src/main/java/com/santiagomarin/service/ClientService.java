@@ -22,8 +22,8 @@ import com.santiagomarin.repository.ClientRepository;
 public class ClientService {
 	
 	private static final Logger log = LoggerFactory.getLogger(ClientService.class); 
-	private ClientRepository clientRepository;
-	private ClientMapper clientMapper;
+	private final ClientRepository clientRepository;
+	private final ClientMapper clientMapper;
 	
 	public ClientService(ClientRepository clientRepository, ClientMapper clientMapper) {
 		this.clientRepository = clientRepository;

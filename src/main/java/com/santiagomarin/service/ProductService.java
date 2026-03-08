@@ -24,9 +24,9 @@ import com.santiagomarin.repository.ProductRepository;
 public class ProductService {
 
 	private static final Logger log = LoggerFactory.getLogger(ProductService.class); 
-	private ProductRepository productRepository;
-	private CategoryRepository categoryRepository;
-	private ProductMapper productMapper;
+	private final ProductRepository productRepository;
+	private final CategoryRepository categoryRepository;
+	private final ProductMapper productMapper;
 	
 	public ProductService(ProductRepository productRepository,CategoryRepository categoryRepository, ProductMapper productMapper) {
 		this.productRepository = productRepository;
