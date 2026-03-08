@@ -45,7 +45,7 @@ public class User {
     @Column(nullable = false)
     private UserStatus status; // ACTIVE, INACTIVE, BLOCKED
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "user_role",
         joinColumns = @JoinColumn(name = "user_id"),

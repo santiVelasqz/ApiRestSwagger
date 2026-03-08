@@ -25,6 +25,9 @@ public class Category {
 
     @Column(nullable = false, unique = true, length = 100)
     private String name;
+    
+    @Column(name = "name_normalized", nullable = false, unique = true, length = 100)
+    private String nameNormalized;
 
     @Column(length = 300)
     private String description;
@@ -43,11 +46,12 @@ public class Category {
 
     public Category() {}
 
-	public Category(Long id, String name, String description, CategoryStatus status, LocalDateTime createdAt,
+	public Category(Long id, String name, String nameNormalized, String description, CategoryStatus status, LocalDateTime createdAt,
 			LocalDateTime updatedAt) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.nameNormalized = nameNormalized;
 		this.description = description;
 		this.status = status;
 		this.createdAt = createdAt;
@@ -68,6 +72,14 @@ public class Category {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getNameNormalized() {
+		return nameNormalized;
+	}
+
+	public void setNameNormalized(String nameNormalized) {
+		this.nameNormalized = nameNormalized;
 	}
 
 	public String getDescription() {

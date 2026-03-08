@@ -1,0 +1,243 @@
+2026-03-08 19:10:36 [restartedMain] INFO  com.santiagomarin.ApiRestSwaggerApplication - Starting ApiRestSwaggerApplication using Java 17.0.12 with PID 6900 (C:\Users\santi\workspace-spring-tools\ApiRestSwagger\target\classes started by santi in C:\Users\santi\workspace-spring-tools\ApiRestSwagger)
+2026-03-08 19:10:36 [restartedMain] DEBUG com.santiagomarin.ApiRestSwaggerApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-03-08 19:10:36 [restartedMain] INFO  com.santiagomarin.ApiRestSwaggerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-08 19:10:36 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-08 19:10:36 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-08 19:10:36 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08 19:10:37 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 10 JPA repository interfaces.
+2026-03-08 19:10:37 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-08 19:10:37 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-08 19:10:37 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-08 19:10:37 [restartedMain] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1371 ms
+2026-03-08 19:10:37 [restartedMain] DEBUG com.santiagomarin.configurations.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-03-08 19:10:37 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-08 19:10:37 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-08 19:10:38 [restartedMain] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08 19:10:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-08 19:10:38 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@163d4659
+2026-03-08 19:10:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-08 19:10:38 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-08 19:10:38 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost/db_api_employees]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: db_api_employees/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-08 19:10:39 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - set client_min_messages = WARNING
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice drop constraint if exists FK6y01j0975eqwmnb0gckttrbj2
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item drop constraint if exists FK4560gqjs1jn62cp4govj4akb3
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item drop constraint if exists FKe198qf8rnki1mp3av7w6n0eys
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product drop constraint if exists FK1mtsbur82frn64de7balymq9s
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product_price drop constraint if exists FKeupemu63ifqfc4txkskyy1hyi
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists stock_movement drop constraint if exists FKq63e7y5l2pnh2tt2lvxlquvbf
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role drop constraint if exists FKa68196081fvovjhkek5m97n3y
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role drop constraint if exists FKj345gk1bovqvfame88rcx7yyx
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists category cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists client cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists employee cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists invoice cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists invoice_line_item cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists product cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists product_price cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists role cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists stock_movement cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists user_role cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists users cascade
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table category (category_id bigint generated by default as identity, created_at timestamp(6), updated_at timestamp(6), name varchar(100) not null unique, name_normalized varchar(100) not null unique, description varchar(300), status varchar(255) not null check ((status in ('ACTIVE','INACTIVE'))), primary key (category_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table client (client_id bigint generated by default as identity, created_at timestamp(6), phone varchar(20), tax_id varchar(20) unique, email varchar(100) not null unique, full_name varchar(200) not null, address varchar(300), status varchar(255) check ((status in ('ACTIVE','INACTIVE'))), primary key (client_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table employee (age integer not null, id bigint generated by default as identity, last_name varchar(50) not null, name varchar(50) not null, primary key (id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table invoice (due_date date, subtotal numeric(12,2) not null, tax_amount numeric(12,2) not null, total numeric(12,2) not null, client_id bigint not null, created_at timestamp(6), invoice_id bigint generated by default as identity, issue_date timestamp(6) not null, updated_at timestamp(6), invoice_number varchar(20) not null unique, notes varchar(500), status varchar(255) not null check ((status in ('DRAFT','ISSUED','PAID','CANCELLED','OVERDUE'))), primary key (invoice_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table invoice_line_item (discount_percent numeric(5,2), line_total numeric(12,2) not null, quantity integer not null, unit_price numeric(10,2) not null, invoice_id bigint not null, line_item_id bigint generated by default as identity, product_id bigint not null, primary key (line_item_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table product (stock_quantity integer not null, category_id bigint, created_at timestamp(6) not null, product_id bigint generated by default as identity, updated_at timestamp(6), name varchar(150) not null, description varchar(500), sku varchar(255) not null unique, status varchar(255) not null check ((status in ('ACTIVE','DISCONTINUED','OUT_OF_STOCK'))), primary key (product_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table product_price (price numeric(10,2) not null, effective_date timestamp(6) not null, end_date timestamp(6), price_id bigint generated by default as identity, product_id bigint not null, created_by varchar(255), primary key (price_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table role (role_id bigint generated by default as identity, description varchar(300), name varchar(255) not null unique check ((name in ('SUPERADMIN','ADMIN','MANAGER','EMPLOYEE'))), primary key (role_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table stock_movement (quantity integer not null, created_at timestamp(6), id bigint generated by default as identity, product_id bigint not null, notes varchar(300), created_by varchar(255), reason varchar(255) not null check ((reason in ('PURCHASE','SALE','RETURN','ADJUSTMENT','DAMAGE'))), primary key (id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table user_role (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - create table users (created_at timestamp(6), updated_at timestamp(6), user_id bigint generated by default as identity, username varchar(50) not null unique, email varchar(100) not null unique, full_name varchar(200) not null, password varchar(255) not null, status varchar(255) not null check ((status in ('ACTIVE','INACTIVE','BLOCKED'))), primary key (user_id))
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice add constraint FK6y01j0975eqwmnb0gckttrbj2 foreign key (client_id) references client
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item add constraint FK4560gqjs1jn62cp4govj4akb3 foreign key (invoice_id) references invoice
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item add constraint FKe198qf8rnki1mp3av7w6n0eys foreign key (product_id) references product
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product add constraint FK1mtsbur82frn64de7balymq9s foreign key (category_id) references category
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product_price add constraint FKeupemu63ifqfc4txkskyy1hyi foreign key (product_id) references product
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists stock_movement add constraint FKq63e7y5l2pnh2tt2lvxlquvbf foreign key (product_id) references product
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role add constraint FKa68196081fvovjhkek5m97n3y foreign key (role_id) references role
+2026-03-08 19:10:39 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role add constraint FKj345gk1bovqvfame88rcx7yyx foreign key (user_id) references users
+2026-03-08 19:10:39 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 19:10:39 [restartedMain] INFO  o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-08 19:10:40 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-08 19:10:40 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 13 mappings in 'requestMappingHandlerMapping'
+2026-03-08 19:10:40 [restartedMain] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-03-08 19:10:40 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-08 19:10:40 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-08 19:10:40 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-08 19:10:40 [restartedMain] INFO  com.santiagomarin.ApiRestSwaggerApplication - Started ApiRestSwaggerApplication in 5.052 seconds (process running for 5.841)
+2026-03-08 19:10:40 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:10:41 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:10:41 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:10:41 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:10:41 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:10:41 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:10:41 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:10:41 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:12:29 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-03-08 19:12:29 [RMI TCP Connection(5)-127.0.0.1] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-08 19:12:29 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-08 19:12:29 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 19:12:29 [RMI TCP Connection(5)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-08 19:12:29 [RMI TCP Connection(5)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-08 19:14:29 [restartedMain] INFO  com.santiagomarin.ApiRestSwaggerApplication - Starting ApiRestSwaggerApplication using Java 17.0.12 with PID 16392 (C:\Users\santi\workspace-spring-tools\ApiRestSwagger\target\classes started by santi in C:\Users\santi\workspace-spring-tools\ApiRestSwagger)
+2026-03-08 19:14:29 [restartedMain] DEBUG com.santiagomarin.ApiRestSwaggerApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-03-08 19:14:29 [restartedMain] INFO  com.santiagomarin.ApiRestSwaggerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-08 19:14:29 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-08 19:14:29 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-08 19:14:30 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08 19:14:30 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 10 JPA repository interfaces.
+2026-03-08 19:14:30 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-08 19:14:30 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-08 19:14:30 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-08 19:14:30 [restartedMain] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1124 ms
+2026-03-08 19:14:30 [restartedMain] DEBUG com.santiagomarin.configurations.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-03-08 19:14:30 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-08 19:14:30 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-08 19:14:31 [restartedMain] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08 19:14:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-08 19:14:31 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6617bf1b
+2026-03-08 19:14:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-08 19:14:31 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-08 19:14:31 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost/db_api_product]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: db_api_product/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-08 19:14:32 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - set client_min_messages = WARNING
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice drop constraint if exists FK6y01j0975eqwmnb0gckttrbj2
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item drop constraint if exists FK4560gqjs1jn62cp4govj4akb3
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item drop constraint if exists FKe198qf8rnki1mp3av7w6n0eys
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product drop constraint if exists FK1mtsbur82frn64de7balymq9s
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product_price drop constraint if exists FKeupemu63ifqfc4txkskyy1hyi
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists stock_movement drop constraint if exists FKq63e7y5l2pnh2tt2lvxlquvbf
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role drop constraint if exists FKa68196081fvovjhkek5m97n3y
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role drop constraint if exists FKj345gk1bovqvfame88rcx7yyx
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists category cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists client cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists employee cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists invoice cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists invoice_line_item cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists product cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists product_price cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists role cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists stock_movement cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists user_role cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists users cascade
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table category (category_id bigint generated by default as identity, created_at timestamp(6), updated_at timestamp(6), name varchar(100) not null unique, name_normalized varchar(100) not null unique, description varchar(300), status varchar(255) not null check ((status in ('ACTIVE','INACTIVE'))), primary key (category_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table client (client_id bigint generated by default as identity, created_at timestamp(6), phone varchar(20), tax_id varchar(20) unique, email varchar(100) not null unique, full_name varchar(200) not null, address varchar(300), status varchar(255) check ((status in ('ACTIVE','INACTIVE'))), primary key (client_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table employee (age integer not null, id bigint generated by default as identity, last_name varchar(50) not null, name varchar(50) not null, primary key (id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table invoice (due_date date, subtotal numeric(12,2) not null, tax_amount numeric(12,2) not null, total numeric(12,2) not null, client_id bigint not null, created_at timestamp(6), invoice_id bigint generated by default as identity, issue_date timestamp(6) not null, updated_at timestamp(6), invoice_number varchar(20) not null unique, notes varchar(500), status varchar(255) not null check ((status in ('DRAFT','ISSUED','PAID','CANCELLED','OVERDUE'))), primary key (invoice_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table invoice_line_item (discount_percent numeric(5,2), line_total numeric(12,2) not null, quantity integer not null, unit_price numeric(10,2) not null, invoice_id bigint not null, line_item_id bigint generated by default as identity, product_id bigint not null, primary key (line_item_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table product (stock_quantity integer not null, category_id bigint, created_at timestamp(6) not null, product_id bigint generated by default as identity, updated_at timestamp(6), name varchar(150) not null, description varchar(500), sku varchar(255) not null unique, status varchar(255) not null check ((status in ('ACTIVE','DISCONTINUED','OUT_OF_STOCK'))), primary key (product_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table product_price (price numeric(10,2) not null, effective_date timestamp(6) not null, end_date timestamp(6), price_id bigint generated by default as identity, product_id bigint not null, created_by varchar(255), primary key (price_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table role (role_id bigint generated by default as identity, description varchar(300), name varchar(255) not null unique check ((name in ('SUPERADMIN','ADMIN','MANAGER','EMPLOYEE'))), primary key (role_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table stock_movement (quantity integer not null, created_at timestamp(6), id bigint generated by default as identity, product_id bigint not null, notes varchar(300), created_by varchar(255), reason varchar(255) not null check ((reason in ('PURCHASE','SALE','RETURN','ADJUSTMENT','DAMAGE'))), primary key (id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table user_role (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - create table users (created_at timestamp(6), updated_at timestamp(6), user_id bigint generated by default as identity, username varchar(50) not null unique, email varchar(100) not null unique, full_name varchar(200) not null, password varchar(255) not null, status varchar(255) not null check ((status in ('ACTIVE','INACTIVE','BLOCKED'))), primary key (user_id))
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice add constraint FK6y01j0975eqwmnb0gckttrbj2 foreign key (client_id) references client
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item add constraint FK4560gqjs1jn62cp4govj4akb3 foreign key (invoice_id) references invoice
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists invoice_line_item add constraint FKe198qf8rnki1mp3av7w6n0eys foreign key (product_id) references product
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product add constraint FK1mtsbur82frn64de7balymq9s foreign key (category_id) references category
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists product_price add constraint FKeupemu63ifqfc4txkskyy1hyi foreign key (product_id) references product
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists stock_movement add constraint FKq63e7y5l2pnh2tt2lvxlquvbf foreign key (product_id) references product
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role add constraint FKa68196081fvovjhkek5m97n3y foreign key (role_id) references role
+2026-03-08 19:14:32 [restartedMain] DEBUG org.hibernate.SQL - alter table if exists user_role add constraint FKj345gk1bovqvfame88rcx7yyx foreign key (user_id) references users
+2026-03-08 19:14:32 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 19:14:32 [restartedMain] INFO  o.s.d.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-08 19:14:32 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-08 19:14:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 13 mappings in 'requestMappingHandlerMapping'
+2026-03-08 19:14:32 [restartedMain] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-03-08 19:14:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-08 19:14:32 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-08 19:14:33 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-08 19:14:33 [restartedMain] INFO  com.santiagomarin.ApiRestSwaggerApplication - Started ApiRestSwaggerApplication in 3.967 seconds (process running for 4.497)
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - select r1_0.role_id from role r1_0 where r1_0.name=? fetch first ? rows only
+2026-03-08 19:14:33 [restartedMain] DEBUG org.hibernate.SQL - insert into role (description,name) values (?,?)
+2026-03-08 19:15:48 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08 19:15:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7d638af5
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5026893f
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-03-08 19:15:48 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/docs", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json, application/yaml]
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Nothing to write: null body
+2026-03-08 19:15:48 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 302 FOUND
+2026-03-08 19:15:48 [http-nio-8080-exec-1] INFO  com.santiagomarin.configurations.LoggingFilter - GET /docs - status: 302 - 132ms
+2026-03-08 19:15:48 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/index.html", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-03-08 19:15:48 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2026-03-08 19:15:48 [http-nio-8080-exec-2] INFO  com.santiagomarin.configurations.LoggingFilter - GET /swagger-ui/index.html - status: 304 - 10ms
+2026-03-08 19:15:48 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui.css", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-03-08 19:15:48 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2026-03-08 19:15:48 [http-nio-8080-exec-3] INFO  com.santiagomarin.configurations.LoggingFilter - GET /swagger-ui/swagger-ui.css - status: 304 - 3ms
+2026-03-08 19:15:48 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/index.css", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-03-08 19:15:48 [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-03-08 19:15:48 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-03-08 19:15:48 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-03-08 19:15:48 [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2026-03-08 19:15:48 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2026-03-08 19:15:48 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2026-03-08 19:15:48 [http-nio-8080-exec-10] INFO  com.santiagomarin.configurations.LoggingFilter - GET /swagger-ui/swagger-ui-standalone-preset.js - status: 304 - 3ms
+2026-03-08 19:15:48 [http-nio-8080-exec-4] INFO  com.santiagomarin.configurations.LoggingFilter - GET /swagger-ui/swagger-ui-bundle.js - status: 304 - 3ms
+2026-03-08 19:15:48 [http-nio-8080-exec-5] INFO  com.santiagomarin.configurations.LoggingFilter - GET /swagger-ui/index.css - status: 304 - 3ms
+2026-03-08 19:15:48 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-08 19:15:48 [http-nio-8080-exec-6] INFO  com.santiagomarin.configurations.LoggingFilter - GET /swagger-ui/swagger-initializer.js - status: 200 - 52ms
+2026-03-08 19:15:48 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v3/api-docs/swagger-config", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2026-03-08 19:15:48 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+2026-03-08 19:15:48 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2026-03-08 19:15:48 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-ui/favicon-32x32.png", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-03-08 19:15:48 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2026-03-08 19:15:48 [http-nio-8080-exec-8] INFO  com.santiagomarin.configurations.LoggingFilter - GET /swagger-ui/favicon-32x32.png - status: 304 - 6ms
+2026-03-08 19:15:48 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-08 19:15:48 [http-nio-8080-exec-7] INFO  com.santiagomarin.configurations.LoggingFilter - GET /v3/api-docs/swagger-config - status: 200 - 61ms
+2026-03-08 19:15:48 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v3/api-docs", parameters={}
+2026-03-08 19:15:48 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2026-03-08 19:15:49 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 734 ms
+2026-03-08 19:15:49 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
+2026-03-08 19:15:49 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{7b226f70656e617069223a22332e302e31222c22696e666f223a7b227469746c65223a22652d636f6d6d656e6365204d616 (truncated)...]
+2026-03-08 19:15:49 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-08 19:15:49 [http-nio-8080-exec-9] INFO  com.santiagomarin.configurations.LoggingFilter - GET /v3/api-docs - status: 200 - 798ms
+2026-03-08 19:16:36 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-03-08 19:16:36 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-08 19:16:36 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-08 19:16:36 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 19:16:36 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-08 19:16:36 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

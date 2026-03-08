@@ -11,12 +11,11 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import com.santiagomarin.controllers.EmployeeController;
 
 @Component
 public class LoggingFilter extends OncePerRequestFilter {
 	
-	private static final Logger log = LoggerFactory.getLogger(EmployeeController.class); 
+	private static final Logger log = LoggerFactory.getLogger(LoggingFilter.class); 
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,

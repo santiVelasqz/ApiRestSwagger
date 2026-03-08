@@ -1,6 +1,6 @@
 package com.santiagomarin.dto.product;
 
-import com.santiagomarin.entities.ProductStatus;
+
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
@@ -17,12 +17,9 @@ public record CreateProductRequest(
 		@Schema(example = "T-Shirt size L")
 	    @Size(max = 500, message = "Description must not exceed 500 chars")
 	    String description,
-	    
-	    @Schema(example = "ACTIVE")
-		@NotBlank(message = "Status is required")
-	    ProductStatus status,
 
 	    @Schema(example = "T-shirt-blue-L")
+		@NotBlank(message="Sku is required")
 	    @Size(max = 50, message = "SKU must not exceed 50 chars")
 	    String sku,
 	    

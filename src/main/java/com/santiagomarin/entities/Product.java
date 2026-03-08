@@ -8,7 +8,6 @@ import java.util.List;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import com.santiagomarin.exception.ResourceNotFoundException;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -23,6 +22,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OrderBy;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
 
 @Entity
@@ -67,6 +68,13 @@ public class Product {
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
+    @PrePersist
+    @PreUpdate
+    private void normalizeSku() {
+        if (this.sku != null) {
+            this.sku = this.sku.trim().toUpperCase();
+        }
+    }
 	
 	public Product () {
 		
@@ -86,13 +94,15 @@ public class Product {
 		this.updatedAt = updatedAt;
 	}
 	 
+	 
+	 
 	 // Método utilitario para obtener el precio vigente
     public BigDecimal getCurrentPrice() {
         return priceHistory.stream()
                 .filter(p -> p.getEndDate() == null)
                 .findFirst()
                 .map(ProductPrice::getPrice)
-                .orElseThrow(() -> new ResourceNotFoundException("Product has no active price")); //cambiar este tipo de exception
+                .orElse(null);
     }
 	
 	public Long getId() {
